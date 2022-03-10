@@ -21,7 +21,7 @@ public class WeatherService {
                 //because we are planning to have query params we need to use uriBuilder as lambda method
                 .uri(uriBuilder -> uriBuilder
                         .path("/current.json")
-                        .queryParam("key","135fbcdd8ab544cdadf140200220303")
+                        .queryParam("key","ENTER YOUR API KEY")
                         //.queryParam("aqi","yes")
                         .queryParam("q",city).build())
                 .retrieve()
